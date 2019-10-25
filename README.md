@@ -83,4 +83,10 @@ ls
 
 ## 参考链接：
 
+http://blog.orange.tw/2018/03/pwn-ctf-platform-with-java-jrmp-gadget.html
+
+https://bling.kapsi.fi/blog/jvm-deserialization-broken-classldr.html
+
+https://blog.zsxsoft.com/post/35
+
 https://paper.seebug.org/shiro-rememberme-1-2-4/
