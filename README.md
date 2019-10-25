@@ -1,4 +1,4 @@
-# SHIRO-550 | Shiro RememberMe 1.2.4 反序列化漏洞
+# Shiro RememberMe 1.2.4 反序列化漏洞（SHIRO-550）
 
 ![](./SHIRO-550.gif)
 
