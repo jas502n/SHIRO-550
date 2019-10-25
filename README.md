@@ -34,7 +34,7 @@ python3 shiro_rce.py
 
 ```
 
-##  get war for samples-web-1.2.4.war
+##  get for samples-web-1.2.4.war
 
 ```
 git clone https://github.com/apache/shiro.git
